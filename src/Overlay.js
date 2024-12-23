@@ -1,8 +1,15 @@
 export default function Overlay({ inside, setInside }) {
+  const getTitleFill = () => {
+    const classArray = [ "white-fill", "red-fill", "green-fill" ]
+    const max = 2
+    const min = 0
+    return classArray[ Math.floor(Math.random() * (max - min + 1) + min) ]
+  }
+
   return (
     <>
       <header>
-        <img draggable={false} width="100%" src="/merry_xmas.svg" />
+        <img draggable={false} width="100%" src="/merry_xmas.svg" className={getTitleFill()} />
       </header>
       <footer className="footer">
         <button
@@ -13,7 +20,7 @@ export default function Overlay({ inside, setInside }) {
           SCROLL TO LOOK INSIDE
         </button>
         <br />
-        Created with love by Anderson Mancini. Using LumaAI for the outside Gaussian Splatting and BlockadeLabs for internal snow globe.
+        Stolen with love by David Dean. Using LumaAI for the outside Gaussian Splatting and BlockadeLabs for internal snow globe.
       </footer>
     </>
   )

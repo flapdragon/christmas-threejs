@@ -58,3 +58,15 @@ button:hover {
     width: 50%;
   }
 }
+
+.white-fill {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%);
+}
+
+.red-fill {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(77%) saturate(6768%) hue-rotate(359deg) brightness(103%) contrast(121%);
+}
+
+.green-fill {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}

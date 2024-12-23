@@ -4,8 +4,9 @@ import { extend, useFrame, useThree } from '@react-three/fiber'
 import { FrontSide, AdditiveBlending, Vector2 } from 'three'
 
 /**
- * Fireworks component by Anderson Mancini.
+ * Fireworks component by David Dean.
  * Based on https://www.shadertoy.com/view/4dBGRw
+ * Also based on https://github.com/ektogamat/christmas-threejs
  */
 
 export default function FireWorksMaterial() {
